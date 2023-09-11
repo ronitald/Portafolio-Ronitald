@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="title">
+                <h1>PORTFOLIO RONITALD</h1>
+            </div>
+            <section class="buttons-nav">
+                <button class="btn-home">
+                    <a href="home.html" class="no-style">HOME</a>
+                </button>
+                <button class="btn">
+                    <a href="https://web.facebook.com/RONALD.PUERTO.21/" class="no-style" target="_blank">
+                        <img class="btn-img" src="Imagenes/Facebook.png" alt="facebook">
+                    </a>
+                </button>
+                <button class="btn">
+                    <a href="https://www.instagram.com/ronalddd_21/" class="no-style" target="_blank">
+                        <img class="btn-img" src="Imagenes/Instagram.png" alt="instagram">
+                    </a>
+                </button>
+                <button class="btn">
+                    <a href="https://github.com/ronitald" class="no-style" target="_blank">
+                        <img class="btn-img" src="Imagenes/GitHub.png" alt="git">
+                    </a>
+                </button>
+                <button class="btn">
+                    <a href="" class="no-style" target="_blank">
+                        <img class="btn-img" src="Imagenes/Settings.png" alt="settings">
+                    </a>
+                </button>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <article class="rectangle">
+            <section class="container-rectangle">
+                <picture>
+                    <img class="img-portada" src="Imagenes/Imagen_Inicio.png" alt="Front">
+                </picture>
+            </section>
+            <ul class="list-group">
+                <br>
+                <a class="list-group-item no-style" href="/02 - AboutMe/AboutMe.html">ABOUT ME</a>
+                <a class="list-group-item no-style" href="/03 - Experience/Experience.html">EXPERIENCE</a>
+                <a class="list-group-item no-style" href="/04 - Projects/projects.html">PROJECTS</a>
+                <a class="list-group-item no-style" href="/05 - ContactMe/contactMe.html">CONTACT ME</a>
+            </ul>
+        </article> 
+        <article class="left-container">
+            <section class="box-left">
+                <img class="codigoimg" src="Imagenes/Codigo.png" alt="code">
+                <p id="time" class="time-text"></p>
+            </section>
+        </article>
+        <article class="front-page">
+            <h1 class="name-front">SOFTWARE DEVELOPER</h1>      
+        </article>
+        <div class="line-center"></div>
+    </main>
+    <footer>
+        <h1> &copy; PORTFOLIO RONITALD 2023</h1>
+    </footer>
+    <script>
+        function updateDate() {
+            const now = new Date();
+            const day = now.getDate().toString().padStart(2, '0');
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const dateString = `${day}/${month}`;
+            document.getElementById('time').textContent = dateString;
+        }
+        updateDate();
+        setInterval(updateDate, 1000);
+    </script> 
+</body>
+</html>

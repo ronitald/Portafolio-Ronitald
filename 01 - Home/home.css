@@ -1,0 +1,123 @@
+/* CONTENEDOR DERECHO */
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 52%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 3rem;
+}
+
+.container-rectangle {
+    display: flex;
+    width: 235px;
+    height: 350px;
+    background: linear-gradient(50deg, #000066 , #6699FF);  
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.list-group a {
+    font-weight: bold;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 20px 'Gluten', cursive;
+    background: linear-gradient(50deg, #000066 , #6699FF);  
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    padding: 8px;
+    color: black;
+}
+
+.list-group a:hover {
+    background: linear-gradient(-50deg, #000066 , #6699FF);  
+    color: white;
+}
+
+.img-portada {
+    padding: auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+/* CAJA DE LA FECHA */
+.box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    background: linear-gradient(-50deg, #0B63F6 , #003CC5);  
+    transition: 0.4s ease-in-out;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.codigoimg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.box-left:hover {
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px 10px #003CC5;
+    transform: rotate(360deg);
+    background-size: cover;
+}
+
+.time-text {
+    font-family: 'Gluten', cursive;
+    font-size: 25px;
+}
+
+/* PORTADA */
+
+.front-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24rem; 
+}
+
+.name-front {
+    font-family: 'ADLaM Display', cursive;
+    font-size: 4.5vw;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.line-center {
+    position: absolute; 
+    top: 60%;
+    left: 0; 
+    right: 28%;
+    border-top: 5px solid black;
+    border-radius: none;
+    z-index: -100;
+}
+
+@media (max-width: 768px) {
+    .rectangle {
+        margin-top: 1rem;
+        margin-right: 10px;
+    }
+}
